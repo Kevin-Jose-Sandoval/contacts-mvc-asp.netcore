@@ -1,0 +1,41 @@
+﻿
+@model ContactModel
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card">
+    <div class="card-header text-center">
+        <h2>Create contact</h2>
+    </div>
+    <div class="card-body">
+        <div class="d-flex justify-content-around align-items-center">
+            <div class="w-25 d-flex justify-content-center">
+                <img class="w-75" src="https://res.cloudinary.com/kevinsandoval/image/upload/v1672352964/general/add-user_vvzc2q.png" />
+            </div>
+            <div class="w-50">
+                <form asp-action="Add" asp-controller="Contact" method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input asp-for="Name" type="text" class="form-control">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Phone</label>
+                        <input asp-for="Phone" type="text" class="form-control">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input asp-for="Email" type="text" class="form-control">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <a asp-action="List" asp-controller="Contact" class="btn btn-secondary">Back to list</a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

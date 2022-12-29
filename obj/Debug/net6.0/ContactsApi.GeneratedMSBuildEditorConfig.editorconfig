@@ -12,9 +12,17 @@ build_property.RootNamespace = ContactsApi
 build_property.ProjectDir = C:\personal\projects\.net\ContactsApi\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\personal\projects\.net\ContactsApi
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/personal/projects/.net/ContactsApi/Views/Contact/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/personal/projects/.net/ContactsApi/Views/Contact/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/personal/projects/.net/ContactsApi/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
