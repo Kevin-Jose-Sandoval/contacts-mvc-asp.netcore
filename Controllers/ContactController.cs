@@ -36,5 +36,46 @@ namespace ContactsApi.Controllers
             else
                 return View();
         }
+
+        public IActionResult Update(int contactId)
+        {
+            // return only a view
+            var contact = _ContactData.GetContact(contactId);
+
+            return View(contact);
+        }
+
+        [HttpPost]
+        public IActionResult Update(ContactModel newContact)
+        {
+            if (!ModelState.IsValid)
+                return View();
+
+            var response = _ContactData.UpdateContact(newContact);
+
+            if (response)
+                return RedirectToAction("List");
+            else
+                return View();
+        }
+
+        public IActionResult Delete(int contactId)
+        {
+            // return only a view
+            var contact = _ContactData.GetContact(contactId);
+
+            return View(contact);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(ContactModel newContact)
+        {
+            var response = _ContactData.DeleteContact(newContact.ContactId);
+
+            if (response)
+                return RedirectToAction("List");
+            else
+                return View();
+        }
     }
 }

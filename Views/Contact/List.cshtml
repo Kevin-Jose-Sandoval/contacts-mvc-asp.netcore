@@ -1,8 +1,46 @@
-﻿
+﻿@model List<ContactModel>
+
 @{
     ViewData["Title"] = "List";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>List</h1>
-
+<div class="card">
+    <div class="card-header text-center">
+        <h2>Contact List</h2>
+    </div>
+    <div class="card-body">
+        <div>
+            <a asp-action="Add" asp-controller="Contact" class="btn btn-success"><i class="bi bi-plus-circle"></i> Create</a>
+            <hr />
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Phone</th>
+                  <th scope="col">Email</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                  @foreach (var item in Model)
+                  {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Phone</td>
+                        <td>@item.Email</td>
+                        <td>
+                                <a asp-action="Update" asp-controller="Contact" asp-route-contactId="@item.ContactId" class="btn btn-outline-primary">
+                                <i class="bi bi-pen"></i> Edit
+                             </a>
+                                <a asp-action="Delete" asp-controller="Contact" asp-route-contactId="@item.ContactId" class="btn btn-outline-danger">
+                                <i class="bi bi-trash3"></i> Delete
+                            </a>
+                        </td>
+                     </tr>
+                  }
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>

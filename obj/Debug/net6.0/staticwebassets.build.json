@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tt3WXR16GizcvaL2zxxEj11h/rmgOo0vFo06hgkiotI=",
+  "Hash": "181L+k9az866ky1poZHK1URdrGDcjOpFlQR6oIEZ58M=",
   "Source": "ContactsApi",
   "BasePath": "_content/ContactsApi",
   "Mode": "Default",
@@ -68,12 +68,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\personal\\projects\\.net\\ContactsApi\\wwwroot\\favicon.ico",
+      "Identity": "C:\\personal\\projects\\.net\\ContactsApi\\wwwroot\\favicon-contact.ico",
       "SourceId": "ContactsApi",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\personal\\projects\\.net\\ContactsApi\\wwwroot\\",
       "BasePath": "_content/ContactsApi",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "favicon-contact.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +82,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon-contact.ico"
     },
     {
       "Identity": "C:\\personal\\projects\\.net\\ContactsApi\\wwwroot\\js\\site.js",
